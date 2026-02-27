@@ -151,7 +151,7 @@ function App() {
                 <span></span>
               </button>
               <div className="logo-container">
-                <img src="/flito.png" alt="Flito Logo" style={{ height: '40px', width: 'auto' }} />
+                <img src={`${import.meta.env.BASE_URL}/flito.png`} alt="Flito Logo" style={{ height: '40px', width: 'auto' }} />
               </div>
             </div>
 
@@ -191,10 +191,10 @@ function App() {
 
           <div className="cta-group">
             <a href="#play-store" className="play-store-badge-link">
-              <img src="/google_play_badge.png" alt="Get it on Google Play" className="play-store-badge" />
+              <img src={`${import.meta.env.BASE_URL}/google_play_badge.png`} alt="Get it on Google Play" className="play-store-badge" />
             </a>
 
-            <button className="btn-outline">
+            <button className="btn-outline ">
               <PlayIcon className="play-icon" />
               Watch Demo
             </button>
@@ -389,7 +389,7 @@ function App() {
               {[1, 2, 3, 4, 5, 6].map((num) => (
                 <div key={num} className="app-slide">
                   <img
-                    src={`/app-img/ap-${num}.png`}
+                    src={`${import.meta.env.BASE_URL}app-img/ap-${num}.png`}
                     alt={`App Screen ${num}`}
                     className="app-screenshot"
                   />
@@ -433,12 +433,12 @@ function App() {
       <footer className="footer" id="contact">
         <div className="container footer-container">
           <div className="footer-brand">
-            <img src="/flito.png" alt="Flito Logo" className="footer-logo" />
+            <img src={`${import.meta.env.BASE_URL}flito.png`} alt="Flito Logo" className="footer-logo" />
             <p className="footer-desc">
               Your ultimate companion for bike rides. Professional maintenance delivered directly to you.
             </p>
             <a href="#" className="play-store-badge-link footer-badge" aria-label="Get it on Google Play">
-              <img src="/google_play_badge.png" alt="Get it on Google Play" className="play-store-badge" />
+              <img src={`${import.meta.env.BASE_URL}google_play_badge.png`} alt="Get it on Google Play" className="play-store-badge" />
             </a>
           </div>
 
